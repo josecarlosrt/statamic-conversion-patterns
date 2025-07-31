@@ -8,10 +8,32 @@
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
     <body class="relative bg-gray-900 font-sans leading-normal text-gray-100 overflow-hidden">
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur border-b border-white/10 bg-black/40">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-sm text-white">
+        <a href="/" class="text-white hover:text-indigo-300 transition">Home</a>
+        <button id="open-contact" class="hover:underline text-indigo-400">Contact</button>
+    </div>
+    </header>
+    <!-- Padding to avoid overlap -->
+    <div class="pt-16"></div>
     <div class="absolute inset-0 z-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.03)_1px,_transparent_1px)] [background-size:20px_20px]"></div>
     <div class="absolute -top-32 -left-32 w-[500px] h-[500px] bg-indigo-500 opacity-30 rounded-full blur-[120px] animate-pulse-slow z-0"></div>
     <div class="relative z-10 mx-auto px-4 lg:min-h-screen flex flex-col items-center justify-center">
         {{ template_content }}
     </div>
+
+    <div id="contact-modal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center hidden">
+  <div class="bg-white/90 border border-white/30 rounded-xl p-10 max-w-2xl text-center text-black backdrop-blur-md shadow-xl">
+    <button id="close-contact" class="absolute top-4 right-4 text-gray-500 hover:text-black">&times;</button>
+    <h2 class="text-xl font-semibold mb-4">Let’s Talk!</h2>
+    <!-- Contact Form here -->
+    <form method="POST" action="https://formspree.io/f/mrbllynr" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full border px-4 py-2 rounded">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full border px-4 py-2 rounded">
+      <textarea name="message" placeholder="Your Message" rows="4" required class="w-full border px-4 py-2 rounded"></textarea>
+      <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded w-full">Send</button>
+    </form>
+  </div>
+</div>
 </body>
 </html>

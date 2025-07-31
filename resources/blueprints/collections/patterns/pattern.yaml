@@ -29,14 +29,14 @@ tabs:
                   key: Form
                   value: Form
                 -
-                  key: Pricing
-                  value: Pricing
-                -
                   key: Testimonial
                   value: Testimonial
                 -
                   key: Header
                   value: Header
+                -
+                  key: Steps
+                  value: Steps
           -
             handle: screenshot
             field:

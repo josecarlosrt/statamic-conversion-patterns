@@ -1,13 +1,13 @@
 ---
 id: home
 blueprint: landing
-title: 'Designs That Get Clicked'
+title: 'A Personal Library by Jose Rivera'
 template: home
-subtitle: 'A visual library of personal landing page components that convert, fast, clean, and crafted with intention. Hopefully you get inspired!'
-teaser: 'Jose Rivera Presents'
+subtitle: "A visual library of landing page components I've built fast, clean, and crafted with intention. Built to convert. Shared to inspire."
+teaser: 'Designs That Get Clicked'
 show_lightning_bolts: true
 updated_by: cd27ecfa-11ec-4866-9a13-d9326cc63b21
-updated_at: 1753948489
+updated_at: 1753973572
 ---
 ## Welcome to your brand new Statamic site!
 
