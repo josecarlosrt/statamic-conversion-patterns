@@ -1,0 +1,73 @@
+title: pattern
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: 'Pattern Title'
+          -
+            handle: type
+            field:
+              type: select
+              display: 'Pattern Type'
+              options:
+                -
+                  key: Hero
+                  value: Hero
+                -
+                  key: Footer
+                  value: Footer
+                -
+                  key: Form
+                  value: Form
+                -
+                  key: Pricing
+                  value: Pricing
+                -
+                  key: Testimonial
+                  value: Testimonial
+                -
+                  key: Header
+                  value: Header
+          -
+            handle: screenshot
+            field:
+              container: assets
+              type: assets
+              display: Screenshot
+              folder: img
+          -
+            handle: description
+            field:
+              type: markdown
+              display: Description
+              localizable: true
+          -
+            handle: conversion_tip
+            field:
+              type: textarea
+              display: 'Conversion Tip'
+          -
+            handle: live_url
+            field:
+              type: link
+              display: 'Example URL'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
