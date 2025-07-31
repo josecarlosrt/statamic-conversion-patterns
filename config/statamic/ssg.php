@@ -46,6 +46,11 @@ return [
         // public_path('build') => 'build',
     ],
 
+    'static_files' => [
+        public_path('assets'),
+    ],
+
+
     /*
     |--------------------------------------------------------------------------
     | Additional URLs
